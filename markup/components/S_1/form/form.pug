@@ -1,0 +1,16 @@
+mixin form()
+    .form
+        .form__wrap
+            .form__title Ask us
+
+            form.form__form(action="")
+                .form__group
+                    input.form__control(type="text" name="name" id="name" placeholder="Name" required)
+                .form__group
+                    input.form__control(type="text" name="phone" id="phone" placeholder="Phone" required)
+                .form__group
+                    input.form__control(type="email" name="email" id="email" placeholder="Email" required)
+                .form__group
+                    textarea.form__control(type="text" name="message" id="message" placeholder="Message" required)
+                .form__group
+                    button#submit.js-btn.btn(type="button") Send

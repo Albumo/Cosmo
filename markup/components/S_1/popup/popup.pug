@@ -1,0 +1,15 @@
+mixin popup(formType)
+    .popup
+        .popup__wrap
+            span.js-close.form__close.popup__close
+            form.form__form(action="")
+                .form__group
+                    input.form__control(type="text" name="name" id="name-popup" placeholder="Name" required)
+                .form__group
+                    input.form__control(type="text" name="phone" id="phone-popup" placeholder="Phone" required)
+                .form__group
+                    input.form__control(type="email" name="email" id="email-popup" placeholder="Email" required)
+                .form__group
+                    textarea.form__control(type="text" name="message" id="message-popup" placeholder="Message" required)
+                .form__group
+                    button#submit.js-btn-popup.btn(type="button") Need consultation

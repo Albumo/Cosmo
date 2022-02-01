@@ -1,0 +1,182 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-flow: row wrap;
+        @include respond-from(xs) {
+
+            justify-content: space-between;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 544px;
+        margin: 0 auto;
+
+        @include respond-from(xs) {
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        width: 100%;
+        font-size: 24px;
+        color: #fff;
+
+    }
+
+    &__title-nth {
+        font-size: 12px;
+    }
+
+    &__subtitle {
+        margin: 0 auto 20px;
+        font-size: 16px;
+        color: #EC2B2B;
+    }
+
+    &__subtitle-nth {
+        margin: 0 0 15px 0;
+    }
+
+    &__item {
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-title {
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__item-subtitle {
+        font-size: 16px;
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    &__group {
+        margin-bottom: 30px;
+        transition: all .5s ease-in-out;
+
+        textarea {
+            width: 100% !important;
+            height: 35px;
+            max-width: 544px;
+            resize: none;
+        }
+
+        button {
+            font-size: 16px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+
+        }
+
+    }
+
+    &__control {
+        position: relative;
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    &__control {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #fff;
+        font-size: 18px;
+        color: #fff;
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    &__group {
+        text-align: left;
+    }
+
+    &__item-description {
+        font-size: 12px;
+        opacity: .7;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 476px;
+        margin-top: 40px;
+
+        @include respond-from(xs) {
+            margin: 0;
+        }
+
+    }
+
+    &__contacts ul {
+        @extend %ul-reset
+    }
+
+    &__btn {
+        @extend %bttn-reset;
+        padding: 12px 70px;
+        background: #fff;
+        font-size: 18px;
+        color: #000;
+        transition: all .35s ease-in-out;
+
+        &:hover {
+            background: #EC2B2B;
+            color: #fff;
+        }
+    }
+
+    @include respond-from(md) {
+        margin: 0 auto 0;
+
+        &__title {
+            margin-bottom: 20px;
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        &__title-nth {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        &__item-title {
+            font-size: 24px;
+        }
+
+        &__item-subtitle {
+            font-size: 18px;
+        }
+    }
+}
