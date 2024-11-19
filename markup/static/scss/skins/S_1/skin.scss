@@ -99,6 +99,15 @@ h3,
     }
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 p {
     line-height: 24px;
 }
@@ -135,59 +144,10 @@ p {
     }
 }
 
-.w-page-section {
-    & {
-        padding: 40px 0;
-    }
-
-    &--no-bttm {
-        padding: 40px 0 0;
-    }
-
-    &--fill {
-        background: $secondary-fill;
-    }
-
-    &--comments {
-        background: $comments-fill;
-    }
-
-    @include respond-from(sm) {
-        & {
-            padding: 65px 0;
-        }
-
-        &--no-bttm {
-            padding: 65px 0 0;
-        }
-
-    }
-
-
-    @include respond-from(lg) {
-        & {
-            padding: 80px 0;
-        }
-
-        &--no-bttm {
-            padding: 80px 0 0;
-        }
-
-        &--fill {
-            h1 {
-                margin-top: -15px;
-            }
-        }
-
-    }
-}
-
 //gap
 
 .w-gap {
-    &___ {
-        margin-top: 40px;
-    }
+    margin-top: 40px;
 }
 
 .w-gap-sm {
@@ -338,20 +298,6 @@ img {
     @include support(object-fit, cover) {
         min-height: 100%;
         object-fit: cover;
-    }
-}
-
-.tab {
-    height: 100%;
-    min-height:  calc(100vh - 60px);
-    overflow: auto;
-
-    @include respond-from(sm) {
-        min-height:  calc(100vh - 30px);
-    }
-
-    @include respond-from(md) {
-        min-height:  calc(100vh - 90px);
     }
 }
 
@@ -577,7 +523,7 @@ img {
     display: none;
     width: 100%;
     max-width: 300px;
-    transition: all .35s ease-in-out;
+    transition: all .15s ease-in-out;
 
     @include respond-from(md) {
         display: block;
@@ -598,11 +544,11 @@ img {
 }
 
 .animation-ship {
-    animation: ship 12s infinite linear;
+    animation: ship 8s infinite linear;
 }
 
 .animation-fly {
-    animation: fly 4s linear forwards;
+    animation: fly 3s linear forwards;
 }
 
 @keyframes ship {
@@ -649,9 +595,6 @@ img {
 
 }
 
-.long-tab {
-    overflow: auto;
-}
 
 .error {
     border-bottom: 2px solid #F00 !important;

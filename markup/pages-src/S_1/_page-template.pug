@@ -2,14 +2,11 @@ include ../components/common/head
 include ../components/common/include-js
 include ../components/common/img-svg
 
-include ../components/%=component_header=%/header/header
 include ../components/%=component_form=%/form/form
 include ../components/%=component_popup=%/popup/popup
 include ../components/%=component_thank=%/thank/thank
-include ../components/%=component_info=%/info/info
 include ../components/%=component_sidebar-button=%/sidebar-button/sidebar-button
 include ../components/%=component_sidebar=%/sidebar/sidebar
-include ../components/%=component_footer=%/footer/footer
 
 doctype html
 html(class="no-js" lang="en")
@@ -23,8 +20,7 @@ html(class="no-js" lang="en")
                 img(src="static/img/content/logo.svg" alt="")
 
         .heading-btn
-            button.popup-btn.btn Need consultation
-        +info
+            button.popup-btn.btn Consultation
         +popup
         +thank
 

@@ -35,7 +35,6 @@ body {
 }
 
 // animation
-
 @keyframes glow {
     0%, 100% {
         color: #fff;
@@ -45,68 +44,5 @@ body {
     10%, 90% {
         color: #253854;
         text-shadow: none;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0)
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0)
-    }
-}
-
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translate3d(-50%, 0, 0)
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0)
-    }
-}
-
-@keyframes fadeInLeftAttribute {
-    0% {
-        opacity: 0;
-        transform: translate3d(-80%, -50%, 0)
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, -50%, 0)
-    }
-}
-
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translate3d(50%, 0, 0)
-    }
-
-    to {
-        opacity: 1;
-        transform: translateZ(0)
     }
 }
